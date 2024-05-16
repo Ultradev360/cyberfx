@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | CyberFx bot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='bot.png') }}" type="image/x-icon">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <!-- Logo and Brand Name -->
+        <a class="navbar-brand" href="#">
+            <img src="/static/images/bot.png" alt="Trading Bot Logo" height="30">
+            CyberFx
+        </a>
+        <!-- Navbar Toggler Button (Hamburger Icon) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('home')}}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#plans">Plans</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('login')}}">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Area -->
+            <div class="col-md-6">
+                <img src="/static/images/bot.png" class="img-fluid animated-image" alt="Trading Bot Image">
+            </div>
+            <!-- Text Area -->
+            <div class="col-md-6 animated-text">
+                <h1>Welcome to CyberFx Trading Bot Service</h1>
+                <p>A reliable trading bot that provides accurate signals for profitable trades. Join now and maximize your trading potential.</p>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <img src="/static/images/cyberFxbot.jpg" class="img-fluid feature-image" alt="Feature Image">
+                    <div class="feature-content">
+                        <h3>Feature 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, cupiditate sed repellat facere fugit veritatis praesentium! Aspernatur odit dolor consequatur magnam cupiditate! Tempore cupiditate veniam aliquam ipsa provident?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <img src="/static/images/cyberFxbot.jpg" class="img-fluid feature-image" alt="Feature Image">
+                    <div class="feature-content">
+                        <h3>Feature 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero excepturi repellat iure numquam animi adipisci molestias facilis rem repellendus sed cupiditate, nemo nam omnis? Optio repellendus laudantium earum quisquam?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <img src="/static/images/cyberFxbot.jpg" class="img-fluid feature-image" alt="Feature Image">
+                    <div class="feature-content">
+                        <h3>Feature 3</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, modi. Nostrum nemo facilis reiciendis, qui officiis sint esse numquam tempore dicta debitis. Error recusandae quam deleniti quis voluptas quo modi?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial Slider -->
+<section class="testimonial-main">
+    <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Testimonial Item 1 -->
+            <div class="carousel-item active">
+                <div class="testimonial-box">
+                    <img src="/static/images/bot.png" class="testimonial-img" alt="Testimonial Image">
+                    <div class="testimonial-content">
+                        <p>"I had an amazing experience with this trading bot. It helped me make profitable trades consistently!"</p>
+                        <span class="testimonial-author">John Doe</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial Item 2 -->
+            <div class="carousel-item">
+                <div class="testimonial-box">
+                    <img src="/static/images/cyberFxbot.jpg" class="testimonial-img" alt="Testimonial Image">
+                    <div class="testimonial-content">
+                        <p>"The signals provided by this bot are accurate and reliable. Highly recommended for traders!"</p>
+                        <span class="testimonial-author">Jane Smith</span>
+                    </div>
+                </div>
+            </div>
+           <!-- Testimonial Item 3 -->
+           <div class="carousel-item">
+            <div class="testimonial-box">
+                <img src="/static/images/bot.png" class="testimonial-img" alt="Testimonial Image">
+                <div class="testimonial-content">
+                    <p>"The signals provided by this bot are accurate and reliable. Highly recommended for traders!"</p>
+                    <span class="testimonial-author">Jane Smith</span>
+                </div>
+            </div>
+        </div>
+        <!-- Add more testimonial items as needed -->
+        </div>
+        <!-- Navigation Buttons -->
+        <a class="carousel-control-prev" href="#testimonial-slider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-slider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+<!-- Container for Plan Boxes -->
+<div class="container">
+    <div class="row" id="login.html">
+        <!-- Plan 1 -->
+        <div class="col-md-4" id="plans">
+            <div class="plan-box">
+                <img src="/static/images/uptrend_prev_ui.png" alt="Plan 1 Image" class="plan-image">
+                <div class="plan-content">
+                    <h3>Basic Plan</h3>
+                    <p>Access to essential features</p>
+                    <ul>
+                        <li>Real-time Signals</li>
+                        <li>Basic Support</li>
+                    </ul>
+                    <p>Price: $19.99/month</p>
+                    <a href="login.html" class="btn btn-primary">Choose Plan</a>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plan 2 -->
+        <div class="col-md-4">
+            <div class="plan-box">
+                <img src="/static/images/uptrend_prev_ui.png" alt="Plan 2 Image" class="plan-image">
+                <div class="plan-content">
+                    <h3>Premium Plan</h3>
+                    <p>Access to advanced features</p>
+                    <ul>
+                        <li>Real-time Signals</li>
+                        <li>Dedicated Support</li>
+                    </ul>
+                    <p>Price: $39.99/month</p>
+                    <a href="login.html" class="btn btn-primary">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Plan 3 -->
+        <div class="col-md-4">
+            <div class="plan-box">
+                <img src="/static/images/uptrend_prev_ui.png" alt="Plan 3 Image" class="plan-image">
+                <div class="plan-content">
+                    <h3>Enterprise Plan</h3>
+                    <p>Access to all features</p>
+                    <ul>
+                        <li>Auto Bot Trading</li>
+                        <li>Dedicated Support</li>
+                        <li>API Access</li>
+                    </ul>
+                    <p>Price: Custom Quote</p>
+                    <a href="login.html" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- footer section here -->
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-4">
+                <h4>Contact Us</h4>
+                <p>123 Corporation St, Cityville, ABC123</p>
+                <p>Email: info@corporation.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+            <!-- Social Media Links -->
+            <div class="col-md-4">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <!-- Important Links -->
+            <div class="col-md-4">
+                <h4>Important Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Initialize Bootstrap Carousel
+    $('.carousel').carousel();
+</script>
+</body>
+</html>

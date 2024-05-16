@@ -1,0 +1,273 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:hsl(0%, 100%, 95%);
+}
+
+.hero-section {
+    padding: 100px 0;
+    background-color: #ffffffd0;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    animation: fadeInUp 2s ease forwards;
+}
+
+.hero-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    animation: slideInRight 2s ease forwards;
+}
+
+.btn-primary {
+    background-color: #152D3c;
+    color: #65e1ef;
+    border-color: #007bff;
+    animation: scaleIn 2s ease forwards;
+}
+
+.animated-image {
+    animation: fadeInLeft 3s ease forwards infinite;
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.features-section {
+    padding: 50px 0;
+}
+
+.feature-box {
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+.feature-image {
+    width: 50%; /* Set width to 100px */
+    object-fit: cover; /* Maintain aspect ratio and cover space */
+    display: block; /* Ensure image is block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.feature-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonial-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.testimonial-box {
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateY(0deg); /* Initial rotation */
+    transition: transform 0.5s ease;
+}
+
+.testimonial-box:hover {
+    transform: perspective(1000px) rotateY(10deg); /* Rotation on hover */
+}
+
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+}
+
+.testimonial-content p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #007bff;
+}
+/* Testimonial Slider Navigation Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: #232222;
+    font-size: 30px;
+    background-color: #152D3c;
+}
+
+/* Global Styles */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.plan-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.plan-box:hover {
+    transform: scale(1.03); /* Scale up by 3% on hover */
+    cursor: pointer;
+}
+.plan-image {
+    width: 40%;
+    margin-bottom: 20px;
+    object-fit: cover; /* Maintain aspect ratio and cover space */
+    display: block; /* Ensure image is block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.plan-content {
+    padding: 20px;
+}
+
+.plan-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.plan-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.plan-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.plan-content ul li {
+    margin-bottom: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer p, .footer ul {
+    font-size: 16px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #007bff;
+}

@@ -1,0 +1,58 @@
+/* Custom Styles */
+
+/* Custom CSS for Animated Image */
+      .profile-image {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+       
+        animation: bounce 1.5s infinite alternate; /* Bouncing animation */
+    }
+@keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-group-prepend .input-group-text {
+    background-color: #fff;
+    border-right: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.text-muted {
+    font-size: 14px;
+}
+
+.text-muted:hover {
+    text-decoration: none;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}

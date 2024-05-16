@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Bot Signal Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <!-- Logo and Brand Name -->
+        <a class="navbar-brand" href="#">
+            <img src="/static/images/cyberFxbot.jpg" alt="Trading Bot Logo" height="30">
+            CyberFx
+        </a>
+        <!-- Navbar Toggler Button (Hamburger Icon) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('home')}}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#plans">Plans</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#account">Account</a>
+                </li>
+                <li class="nav-item logout">
+                    <a class="nav-link" href="{{url_for('login')}}">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <main>
+          
+
+            <!-- <section id="plans">
+                <h2>Subscription Plans</h2>
+                {% for plan in plans %}
+                    <div class="plan">
+                        <h3>{{ plan.name }}</h3>
+                        <p>{{ plan.description }}</p>
+                        <button>Subscribe</button>
+                    </div>
+                {% endfor %}
+            </section>
+
+            <section id="active-plans">
+                <h2>Active Plans</h2>
+                {% for active_plan in active_plans %}
+                    <div class="active-plan">
+                        <h3>{{ active_plan.name }}</h3>
+                        <p>Expires on: {{ active_plan.expiry_date }}</p>
+                        <button>Renew</button>
+                    </div>
+                {% endfor %}
+            </section> -->
+            
+        <div class="container">
+            <h1>Welcome, {{ user.username }}!</h1> 
+
+            <!-- Available Plans for Subscription --> 
+            <center><h3>Plans</h3></center>
+            <div class="row">
+                <div class="col-md-4" id="plans">
+                    <div class="plan-box">
+                        <img src="/static/images/uptrend_prev_ui.png" alt="Plan 1 Image" class="plan-image">
+                        <div class="plan-content">
+                            <h3>Basic Plan</h3>
+                            <p>Access to essential features</p>
+                            <ul>
+                                <li>Real-time Signals</li>
+                                <li>Basic Support</li>
+                            </ul>
+                            <p>Price: $19.99/month</p>
+                            <a href="#" class="btn btn-primary bg-secondary">Active Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plan 2 -->
+                <div class="col-md-4">
+                    <div class="plan-box">
+                        <img src="/static/images/uptrend_prev_ui.png" alt="Plan 2 Image" class="plan-image">
+                        <div class="plan-content">
+                            <h3>Premium Plan</h3>
+                            <p>Access to advanced features</p>
+                            <ul>
+                                <li>Real-time Signals</li>
+                                <li>Dedicated Support</li>
+                            </ul>
+                            <p>Price: $39.99/month</p>
+                            <a href="https://t.me/starkfxgoat_bot" class="btn btn-primary">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Plan 3 -->
+                <div class="col-md-4">
+                    <div class="plan-box">
+                        <img src="/static/images/uptrend_prev_ui.png" alt="Plan 3 Image" class="plan-image">
+                        <div class="plan-content">
+                            <h3>Enterprise Plan</h3>
+                            <p>Access to all features</p>
+                            <ul>
+                                <li>Real-time Signals</li>
+                                <li>Dedicated Support</li>
+                                <li>API Access</li>
+                            </ul>
+                            <p>Price: Custom Quote</p>
+                            <a href="https://t.me/starkfxgoat_bot" class="btn btn-primary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+         <div class="container">
+            <section id="account">
+                <h2>Account Settings</h2>
+                <div class="account-info">
+                    <p><strong>Username:</strong> {{ user.username }}</p>
+                    <p><strong>Email:</strong> {{ user.email }}</p>
+                    <p><strong>Phone Number: </strong>{{user.phone}} </p>
+                </div>
+                <div class="logout">
+                    <button class="btn-block btn-primary">Logout</button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
+
+</html>
